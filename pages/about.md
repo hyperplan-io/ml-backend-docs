@@ -5,7 +5,7 @@ permalink: /about/
 
 # About
 
-Hyperplan Backend is an open source projected designed for small and medium machine learning teams.
+Hyperplan Backend is an open source project designed for small and medium machine learning teams.
 
 ## Support
 
