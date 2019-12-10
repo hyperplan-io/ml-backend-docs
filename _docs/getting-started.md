@@ -14,9 +14,12 @@ The goal of Hyperplan is to help you manage and serve your machine learning proj
 * You want to easily extend your application: Hook functions let you register side effects to execute on the data that flows through your algorithms.
 * You want your application to be testable: Hyperplan is primarily made out of simple testable functions.
 
+To install it, execute the following command `pip install mlbackend`. Ml Backend requires python >= 3.6.
+
 ## Project 
 
-A project is the answer to a is a set of algorithms that achieve the same goal. 
+A project regroups a set of algorithms that achieve the same goal. 
+
 * It is uniquely identified.
 * It contains a number of prediction functions
 * It holds preprocessing and post processing functions
@@ -138,7 +141,8 @@ if __name__ == "__main__":
               PROJECT_A.predict([[1]], 'numpy', {'userId': '42'})
           )
       )
-
+				
+      # Serve Project on route /projecta and accept only json data
       MlRestApp([(PROJECT_A, '/projecta', ['application/json'])]).start()
 
 ```
